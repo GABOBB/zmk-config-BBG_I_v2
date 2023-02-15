@@ -33,10 +33,10 @@
 // | SHFT | vx  |  0  |  1  |  2  |  3  |  ---  |     |     | DWN |     |     | ESC  |
 //                    | GUI |     | SPC |  ---  | ENT | BT  | ALT |
                         bindings = <
-   &kp TAB    &kp C_VOLUME_UP  &trans   &kp N7   &kp N8   &kp N9        &trans   &trans   &kp UP     &trans  &trans   &trans  &kp BSPC
-   &kp LCTRL  &kp C_VOLUME_UP  &trans   &kt N4   &kt N5   &kt N6        &trans   &kp LEFT &kt C_MENU &kp RIGHT        &trans  &trans
-   &kp LSHFT  &kp C_MUTE       &kt N0   &kt N1   &kt N2   &kt N3        &trans   &trans   &kp DOWN   &trans &trans    &trans  &trans
-                          	            &kp LGUI &trans   &kp SPACE     &kp RET  &mo 3    &kp RALT
+   &kp TAB    &kp C_VOLUME_UP  &trans   &kp N7   &kp N8   &kp N9        &trans   &trans   &kp UP     &trans        &trans  &kp BSPC
+   &kp LCTRL  &kp C_VOLUME_UP  &trans   &kt N4   &kt N5   &kt N6        &trans   &kp LEFT &kt C_MENU &kp RIGHT     &trans  &trans
+   &kp LSHFT  &kp C_MUTE       &kt N0   &kt N1   &kt N2   &kt N3        &trans   &trans   &kp DOWN   &trans &trans &trans  &trans
+                          	        &kp LGUI &trans   &kp SPACE     &kp RET  &mo 3    &kp RALT
                         >;
                 };
 
@@ -56,15 +56,15 @@
 
                 BT_layer {
 // -----------------------------------------------------------------------------------------
-// | BT1  |     |     |     |     |BTCLR|  ---  |     | f1  |  f2 |  f3 | f4  |      |
+// | BT1  | BT3 |     |     |     |BTCLR|  ---  |     | f1  |  f2 |  f3 | f4  |      |
 // | BT2  |     |     |     |     |     |  ---  |     |  f5 | f6  |  f7 | f8  |      |
 // | BT3  |     |     |     |     |     |  ---  |     |  f9 | f10 | f11 | f12 |      |
 //                    |     |     |     |  ---  |     |     |     |
                         bindings = <
-   &kp  TAB  &trans  &trans &trans   &trans   &trans      &trans   &kp F1  &kp F2   &kp F3  &kp F4 &trans   
-   &kp LCTRL &trans  &trans &trans   &trans   &trans      &trans   &kp F5  &kp F6   &kp F7  &kp F8 &trans
-   &kp LSHFT &trans  &trans &trans   &trans   &trans      &trans   &kp F9  &kp F10  &kp F11 &kp F12 &trans
-                    	    &trans   &trans   &trans      &trans   &trans  &trans
+   &bt BT_SEL 0  &bt BT_SEL 3   &trans   &trans   &trans   &bt BT_CLR  &trans   &kp F1  &kp F2   &kp F3  &kp F4 &trans   
+   &bt BT_SEL 1  &trans         &trans   &trans   &trans   &trans      &trans   &kp F5  &kp F6   &kp F7  &kp F8 &trans
+   &bt BT_SEL 2  &trans         &trans   &trans   &trans   &trans      &trans   &kp F9  &kp F10  &kp F11 &kp F12 &trans
+                    	                 &trans   &trans   &trans      &trans   &trans  &trans
                         >;
                 };                
         };
