@@ -24,18 +24,18 @@
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
-                };
+                };45612xweerere
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |  7  |  8  |  9  |   |     |  UP |     |     |     | BKSP |
-// | BTCLR|     |     |  4  |  5  |  6  |   | LFT | MENU| RGT |     |     |      |
-// | SHFT |     |  0  |  1  |  2  |  3  |   |     | DWN |     |     |     |      |
+// |  TAB |     |     |  7  |  8  |  9  |   |     |     |  UP |     |     | BKSP |
+// | BTCLR|     |     |  4  |  5  |  6  |   |     | LFT | MENU| RGT |     |      |
+// | SHFT |     |  0  |  1  |  2  |  3  |   |     |     | DWN |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &trans    &trans   &kp KP_N7    &kp KP_N8    &kp KP_N9     &trans    &kp UP              &trans    &trans  &trans &kp BSPC
-   &kp LCTRL  &trans    &trans   &kp KP_N4    &kp KP_N5    &kp KP_N6     &kp LEFT  &kp K_CONTEXT_MENU  &kp RIGHT &trans  &trans &trans
-   &kp LSHFT  &trans    &trans   &kp KP_N1    &kp KP_N2    &kp KP_N3     &trans    &kp DOWN            &trans    &trans  &trans &trans
-                          	 &kp LGUI     &trans       &kp SPACE     &kp RET   &mo 3               &kp RALT
+   &kp TAB    &trans    &trans   &kp KP_N7    &kp KP_N8    &kp KP_N9   &trans    &trans    &kp UP              &trans    &trans   &kp BSPC
+   &kp LCTRL  &trans    &trans   &kp KP_N4    &kp KP_N5    &kp KP_N6   &trans    &kp LEFT  &kp K_CONTEXT_MENU  &kp RIGHT &trans   &trans
+   &kp LSHFT  &trans    KP_N0    &kp KP_N1    &kp KP_N2    &kp KP_N3   &trans    &trans    &kp DOWN            &trans    &trans   &trans
+                          	 &kp LGUI     &trans       &kp SPACE   &kp RET   &mo 3     &kp RALT
                         >;
                 };
 
